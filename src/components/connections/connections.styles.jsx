@@ -5,7 +5,13 @@ const hideSocialMedia = css`
 `
 
 export const ConnectionsContainer = styled.div`
-  flex: 1 1;
+  width: 1200px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  z-index: 10;
   color: #ffffff;
   display: flex;
   flex-direction: row;
