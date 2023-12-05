@@ -6,11 +6,12 @@ export const FooterContainer = styled.div`
   justify-content: space-between;
   align-items: stretch;
   width: 100%;
-  height: 300px;
+  height: 350px;
   position: fixed;
   bottom: 0;
   width: 100%;
   z-index: -99;
+  padding: 30px 0px;
 `;
 export const FooterImage = styled.div`
   position: relative;
@@ -99,4 +100,7 @@ export const SocialMedia = styled.div`
 export const MapWrapper = styled(MapContainer)`
   width: 467.489px;
   overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  position: relative;
 `;

@@ -47,7 +47,6 @@ const Footer = () => {
           </SocialMedia>
         </SocialMediaContainer>
       </FooterDescription>
-
       <MapWrapper center={coord} zoom={13}>
         <TileLayer
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
