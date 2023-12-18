@@ -11,19 +11,18 @@ export const FooterContainer = styled.div`
   bottom: 0;
   width: 100%;
   z-index: -99;
-  padding: 30px 0px;
 `;
 export const FooterImage = styled.div`
   position: relative;
-  width: 300px;
+  width: 400px;
   img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    object-fit: contain;
+    object-fit: cover;
   }
   @media (max-width: 576px) {
     flex: 1 1 100%;
@@ -33,11 +32,52 @@ export const FooterImage = styled.div`
   }
   }
 `;
+
+export const FooterInfos = styled.div`
+  flex: 1 1;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  h2{
+    font-size: 50px;
+    font-weight: bold;
+    color: #0e4da1;
+  }
+  p{
+    font-size: 26px;
+    color: #0e4da1;
+  }
+
+  hr{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    border-top: 1px solid #eeeeee;
+    margin: 30px 0px;
+  }
+
+  table{
+    flex: 1 1;
+    tr{
+      padding: 5px 0;
+      th{
+        text-align: start;
+        font-weight: bold;
+        padding: 5px 0;
+      }
+    }
+  }
+
+`;
+
 export const FooterDescription = styled.div`
   flex: 1 1;
   padding: 40px;
   display: flex;
   align-items: stretch;
+  position: relative;
   h3{
     font-size: 20px;
     font-weight: bold;
@@ -63,12 +103,14 @@ export const LinkColumn = styled.div`
 `
 
 export const SocialMediaContainer = styled.div`
-  flex: 1 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  position: absolute;
+  right: 20px;
+  top: 40px;
 `;
 
 export const SocialMedia = styled.div`
@@ -76,8 +118,8 @@ export const SocialMedia = styled.div`
   flex-direction: row;
   gap: 10px;
   span {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: block;
     &:first-child{
        img{

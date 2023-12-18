@@ -12,22 +12,22 @@ const Navigation = () => {
   return (
     <NavbarContainer>
       <DesktopNav>
+        <NavLink route={"/about-us"} page={"About Us"} />
         <NavLink route={"/our-products"} page={"Our Products"} />
         <NavLink route={"/mission"} page={"Mission"} />
         <NavLink route={"/vision"} page={"Vision"} />
         <NavLink route={"/contact"} page={"Contact"} />
-        <NavLink route={"/about-us"} page={"About Us"} />
       </DesktopNav>
       <MobileNavContainer>
         <MobileNavContainerTrigger open={isNavOpen} onClick={() => { toggleIsCartOpen(); }}>
           <img src={WheelIcon} alt="wheel_icon" />
         </MobileNavContainerTrigger>
         <MobileNav open={isNavOpen}>
+          <NavLink route={"/about-us"} page={"About Us"} />
           <NavLink route={"/our-products"} page={"Our Products"} />
           <NavLink route={"/mission"} page={"Mission"} />
           <NavLink route={"/vision"} page={"Vision"} />
           <NavLink route={"/contact"} page={"Contact"} />
-          <NavLink route={"/about-us"} page={"About Us"} />
         </MobileNav>
       </MobileNavContainer>
     </NavbarContainer>

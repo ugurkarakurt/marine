@@ -1,12 +1,13 @@
 import React from 'react';
-import LogoIcon from "./logo.png";
+import LogoIcon from "./header_logo.svg";
+import LogoIconWhite from "./ASAPMarine-beyaz.svg";
 import { LogoContainer, LogoWrapper } from "./logo.styles";
 
-const Logo = () => {
+const Logo = ({ isHover, scrollPosition }) => {
   return (
     <LogoContainer>
       <LogoWrapper>
-        <img src={LogoIcon} alt="logo" />
+        <img src={scrollPosition || isHover ? LogoIcon : LogoIconWhite} alt="logo" />
       </LogoWrapper>
     </LogoContainer>
   );

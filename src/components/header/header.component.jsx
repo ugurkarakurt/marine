@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from '../logo/logo.component';
 import Navigation from '../navigation/navigation.component';
 import { HeaderContainer, HeaderWrapper, HomeLink } from "./header.styles";
 
 const Header = ({ scrollPosition }) => {
 
+  const [isHover, setIsHover] = useState(false);
+
+  const isMouseEnter = () => {
+    setIsHover(true);
+  }
+
+  const isMouseLeave = () => {
+    setIsHover(false);
+  }
+
   return (
-    <HeaderContainer $scrollPosition={scrollPosition} >
+    <HeaderContainer onMouseLeave={isMouseLeave} onMouseEnter={isMouseEnter} $scrollPosition={scrollPosition} >
       <HeaderWrapper >
         <HomeLink to="/">
-          <Logo />
+          <Logo isHover={isHover} scrollPosition={scrollPosition} />
         </HomeLink>
         <Navigation />
       </HeaderWrapper>

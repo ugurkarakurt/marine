@@ -5,7 +5,7 @@ export const LogoContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   height: 100%;
-  width: 70px;
+  width: 120px;
 `
 export const LogoWrapper = styled.div` 
   display: flex;
