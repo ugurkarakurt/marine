@@ -74,7 +74,7 @@ export const FooterInfos = styled.div`
 
 export const FooterDescription = styled.div`
   flex: 1 1;
-  padding: 40px;
+  padding: 50px;
   display: flex;
   align-items: stretch;
   position: relative;
@@ -110,7 +110,7 @@ export const SocialMediaContainer = styled.div`
   gap: 10px;
   position: absolute;
   right: 20px;
-  top: 40px;
+  top: 50px;
 `;
 
 export const SocialMedia = styled.div`

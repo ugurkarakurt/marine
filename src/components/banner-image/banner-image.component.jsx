@@ -1,12 +1,12 @@
 import React from 'react';
 import { BannerImageContainer } from './banner-image.styles';
-import WaveImage from "./wave.jpg";
+import MainImage from "./main_image.jpeg";
 
 const BannerImage = () => {
   return (
     <BannerImageContainer>
       
-      <img src={WaveImage} alt="banner_image" />
+      <img src={MainImage} alt="banner_image" />
     </BannerImageContainer>
   );
 }

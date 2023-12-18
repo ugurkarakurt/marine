@@ -29,19 +29,39 @@ export const StickyContent = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   gap: 20px;
-  h2{
-    font-size: 25px;
-    margin-bottom: 20px;
-    color: ${(props) => props.titleColor};
-    color: #fff;
+`
+
+export const PageTitle = styled.h2`
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: ${(props) => props.$titlecolor};
+`
+export const PageParagraph = styled.p`
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  line-height: 1.4;
+  text-align: justify;
+  color: ${(props) => props.$textcolor};
+  padding-left: 50px;
+  ol{
+    li{
+      list-style: disc;
+    }
   }
-  p{
-    font-size: 20px;
-    letter-spacing: 1.2px;
-    line-height: 1.4;
-    text-align: justify;
-    color: ${(props) => props.textColor};
-    color: #fff;
+  br{
+    margin: 0 20px;
+  }
+  table{
+    margin: 50px 0px;
+    flex: 1 1;
+    tr{
+      padding: 5px 10px 0 0;
+      th{
+        text-align: start;
+        font-weight: bold;
+        padding: 5px 0;
+      }
+    }
   }
 `
 

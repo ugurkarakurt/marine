@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <BannerContainer >
       <BannerContent />
-      <BannerImage />
+      <BannerVideo />
     </BannerContainer>
   );
 }

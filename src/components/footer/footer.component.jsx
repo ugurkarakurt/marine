@@ -16,7 +16,7 @@ const Footer = () => {
       </FooterImage>
 
       <FooterDescription>
-        <FooterInfos>
+        {/* <FooterInfos>
           <h2>Zafer Yılmaz</h2>
           <p>Sales Executive</p>
           <hr />
@@ -36,8 +36,8 @@ const Footer = () => {
               </tr>
             </tbody>
           </table>
-        </FooterInfos>
-        {/* <Links>
+        </FooterInfos> */}
+        <Links>
           <LinkColumn>
             <h3>Info</h3>
             <NavLink route={"/our-products"} page={"Our Products"} />
@@ -52,9 +52,9 @@ const Footer = () => {
             <h3>Company</h3>
             <NavLink route={"/about-us"} page={"About Us"} />
           </LinkColumn>
-        </Links> */}
+        </Links>
         <SocialMediaContainer>
-          {/* <h3>Follow Us</h3> */}
+          <h3>Follow Us</h3>
           <SocialMedia>
             <span>
               <img src={TwitterIcon} alt="twitter_logo" />
