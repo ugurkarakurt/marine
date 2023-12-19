@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const NavLinkContainer = styled(Link)`
   font-size: 14px;
   text-decoration: none;
-  color: #2391cf;
+  color: #434343;
   transition: color .1s ease-in-out;
   position: relative;
   width: fit-content;
@@ -16,12 +16,12 @@ export const NavLinkContainer = styled(Link)`
     top: calc(100% + 2px); 
     width: 0;
     height: 1px; 
-    background-color: #0e4da1; 
+    background-color: #000000; 
     transition: width 0.2s ease; 
   }
 
   &:hover{
-  color: #0e4da1;
+  color: #000000;
   &::after{
     width: 100%;
   }

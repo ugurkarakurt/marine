@@ -6,6 +6,10 @@ const scrollPosition = css`
   &>div {
     background-color: #fff;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    @media (max-width:768px) {
+      background-color: transparent;
+      box-shadow: none;
+    }
   }
 `;
 
@@ -26,6 +30,9 @@ export const HeaderContainer = styled.div`
     @media (max-width:1200px) {
       width: 100%;
       border-radius: 0;
+  
+    }
+    @media (max-width:768px) {
       background-color: transparent;
       box-shadow: none;
     }
@@ -47,14 +54,17 @@ export const HeaderWrapper = styled.div`
     }
     @media (max-width:1200px) {
       border-radius: 0;
-      background-color: transparent;
-      background: transparent;
-      box-shadow: none;
       padding: 0 50px;
       &:hover{
         background-color: transparent;
         box-shadow: none;
       }
+    }
+    @media (max-width:768px) {
+      background-color: transparent;
+      background: transparent;
+      box-shadow: none;
+      padding: 0 20px;
     }
 `
 

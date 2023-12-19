@@ -1,5 +1,13 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
+const slideAnimation = keyframes`
+  0% {
+            transform: translateY(100px);
+  }
+  100% {
+            transform: translateY(0);
+  }
+`
 export const BannerContentContainer = styled.div`
   position: absolute;
   inset: 0;
@@ -9,6 +17,8 @@ export const BannerContentContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 50px;
+  animation: ${slideAnimation} 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
   h1{
     color: #ffffff;
     font-size: 100px;

@@ -3,9 +3,8 @@ import { TileLayer, Marker, Tooltip } from "react-leaflet";
 import LinkedinIcon from "../connections/linkedin-icon.svg"
 import TwitterIcon from "../connections/twitter-icon.svg"
 import InstagramIcon from "../connections/instagram-icon.svg"
-import { FooterContainer, MapWrapper, FooterImage, FooterDescription, Links, LinkColumn, SocialMediaContainer, SocialMedia, FooterInfos } from "./footer.styles";
-import Image from "./footer_logo.png"
-import NavLink from '../nav-link/nav-link.component';
+import { FooterContainer, MapWrapper, FooterImage, FooterDescription, Links, LinkColumn, SocialMediaContainer, SocialMedia, FooterNavLink } from "./footer.styles";
+import Image from "./footer_logo.svg"
 const Footer = () => {
   const coord = [40.8403951, 29.301991]
 
@@ -40,17 +39,17 @@ const Footer = () => {
         <Links>
           <LinkColumn>
             <h3>Info</h3>
-            <NavLink route={"/our-products"} page={"Our Products"} />
-            <NavLink route={"/mission"} page={"Mission"} />
-            <NavLink route={"/vision"} page={"Vision"} />
+            <FooterNavLink route={"/our-products"} page={"Our Products"} />
+            <FooterNavLink route={"/mission"} page={"Mission"} />
+            <FooterNavLink route={"/vision"} page={"Vision"} />
           </LinkColumn>
           <LinkColumn>
             <h3>Resources</h3>
-            <NavLink route={"/contact"} page={"Contact"} />
+            <FooterNavLink route={"/contact"} page={"Contact"} />
           </LinkColumn>
           <LinkColumn>
             <h3>Company</h3>
-            <NavLink route={"/about-us"} page={"About Us"} />
+            <FooterNavLink route={"/about-us"} page={"About Us"} />
           </LinkColumn>
         </Links>
         <SocialMediaContainer>

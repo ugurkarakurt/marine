@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { MapContainer } from "react-leaflet";
+import NavLink from '../nav-link/nav-link.component';
 
 export const FooterContainer = styled.div`
   display: flex;
@@ -11,25 +12,22 @@ export const FooterContainer = styled.div`
   bottom: 0;
   width: 100%;
   z-index: -99;
+  /* background: linear-gradient(to right, #fff, #fff,#26a9e1); */
 `;
 export const FooterImage = styled.div`
   position: relative;
   width: 400px;
   img {
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    object-fit: cover;
-  }
-  @media (max-width: 576px) {
-    flex: 1 1 100%;
-    padding-bottom: 100%;
-    img {
     object-fit: contain;
   }
+  @media (max-width:1200px) {
+   display: none;
   }
 `;
 
@@ -92,6 +90,16 @@ export const Links = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   gap: 50px;
+  h3{
+    color: #242f37;
+  }
+  @media (max-width:768px) {
+   gap: 20px;
+  }
+`;
+
+export const FooterNavLink = styled(NavLink)`
+
 `;
 
 export const LinkColumn = styled.div`
@@ -111,6 +119,12 @@ export const SocialMediaContainer = styled.div`
   position: absolute;
   right: 20px;
   top: 50px;
+  h3{
+    color: #242f37;
+  }
+  @media (max-width:1500px) {
+    bottom: 0px;
+  }
 `;
 
 export const SocialMedia = styled.div`
@@ -121,7 +135,10 @@ export const SocialMedia = styled.div`
     width: 30px;
     height: 30px;
     display: block;
-    &:first-child{
+    img{
+      filter: invert(100%) sepia(28%) saturate(0%) hue-rotate(177deg) brightness(106%) contrast(104%);
+    }
+    /* &:first-child{
        img{
         filter: invert(53%) sepia(51%) saturate(3797%) hue-rotate(178deg) brightness(102%) contrast(90%);
       }
@@ -135,7 +152,7 @@ export const SocialMedia = styled.div`
        img{
         filter: invert(27%) sepia(99%) saturate(2470%) hue-rotate(323deg) brightness(92%) contrast(90%);      
        }
-    }
+    } */
   }
 `;
 
@@ -145,4 +162,7 @@ export const MapWrapper = styled(MapContainer)`
   border-radius: 10px;
   margin: 20px;
   position: relative;
+  @media (max-width:768px) {
+   display: none;
+  }
 `;

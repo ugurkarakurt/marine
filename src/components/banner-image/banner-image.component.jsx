@@ -5,7 +5,6 @@ import MainImage from "./main_image.jpeg";
 const BannerImage = () => {
   return (
     <BannerImageContainer>
-      
       <img src={MainImage} alt="banner_image" />
     </BannerImageContainer>
   );

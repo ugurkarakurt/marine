@@ -1,4 +1,13 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const slideAnimation = keyframes`
+  0% {
+            transform: translateY(100px);
+  }
+  100% {
+            transform: translateY(0);
+  }
+`
 
 export const Container = styled.div`
   min-height: 100vh;
@@ -18,6 +27,10 @@ export const ContentWrapper = styled.div`
   height: 100%;
   background-color: transparent;
   padding: 170px 0;
+  @media (max-width:1200px) {
+   width: 100%;
+   padding: 150px 0 100px 0;
+  }
 `
 
 export const StickyContent = styled.div`
@@ -29,20 +42,35 @@ export const StickyContent = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   gap: 20px;
+  @media (max-width:1200px) {
+   width: 100%;
+  }
 `
 
 export const PageTitle = styled.h2`
   font-size: 25px;
   margin-bottom: 20px;
   color: ${(props) => props.$titlecolor};
+  animation: ${slideAnimation} 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  @media (max-width:1200px) {
+   font-size: 16px;
+   padding: 0 30px;
+  }
 `
 export const PageParagraph = styled.p`
   font-size: 20px;
   letter-spacing: 1.2px;
   line-height: 1.4;
-  text-align: justify;
+  text-align: left;
   color: ${(props) => props.$textcolor};
   padding-left: 50px;
+  animation: ${slideAnimation} 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  @media (max-width:1200px) {
+   font-size: 14px;
+   padding: 0 50px;
+   text-align: left;
+
+  }
   ol{
     li{
       list-style: disc;
@@ -52,7 +80,7 @@ export const PageParagraph = styled.p`
     margin: 0 20px;
   }
   table{
-    margin: 50px 0px;
+    margin: 20px 0px;
     flex: 1 1;
     tr{
       padding: 5px 10px 0 0;

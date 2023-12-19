@@ -6,7 +6,6 @@ import InstagramIcon from "./instagram-icon.svg"
 import { ConnectionsContainer, Email, Number, SocialMedia } from './connections.styles';
 
 const Connections = ({scrollPosition}) => {
-  console.log(scrollPosition);
   return (
     <ConnectionsContainer $scrollPosition={scrollPosition}>
       <Email className="mail">
