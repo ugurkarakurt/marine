@@ -22,7 +22,20 @@ export const BannerContainer = styled.div`
    border-radius: 0;
   }
 
+  &:hover{
+    img{
+    transform: scale(1);
+    transition: all 3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    opacity: 1;
+    }
+    div{
+      transform: translate(-50%, -50%) scale(1);
+      transition: all 3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    }
+  }
+
   img {
+    transform: scale(1.1);
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -33,7 +46,7 @@ export const BannerContainer = styled.div`
 export const BannerText = styled.div`
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(.8);
   position: absolute;
   font-size: 50px;
   text-shadow: 1px 1px 8px rgba(0,0,0,0.59);

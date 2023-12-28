@@ -36,6 +36,10 @@ export const Email = styled.span`
 `;
 export const Number = styled.span`
   padding: 0 10px;
+  img{
+    width: 20px;
+    height: 20px;
+  }
 `;
 export const SocialMedia = styled.div`
   display: flex;

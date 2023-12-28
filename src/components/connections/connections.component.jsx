@@ -2,18 +2,23 @@ import React from 'react';
 import LinkedinIcon from "./linkedin-icon.svg"
 import TwitterIcon from "./twitter-icon.svg"
 import InstagramIcon from "./instagram-icon.svg"
+import WhatsappIcon from "./whatsapp.png";
 
 import { ConnectionsContainer, Email, Number, SocialMedia } from './connections.styles';
 
-const Connections = ({scrollPosition}) => {
+const Connections = ({ scrollPosition }) => {
   return (
     <ConnectionsContainer $scrollPosition={scrollPosition}>
-      <Email className="mail">
-        mail@mail.com
-      </Email>
-      <Number className="number">
-        0555454343
-      </Number>
+      <a target='_blank' href="mailto: abc@example.com" rel="noreferrer">
+        <Email className="mail">
+          mail@mail.com
+        </Email>
+      </a>
+      <a target='_blank' href="https://wa.me/+9005356700485" rel="noreferrer">
+        <Number className="number">
+          <img src={WhatsappIcon} alt="whatsapp_logo" />
+        </Number>
+      </a>
       <SocialMedia>
         <span>
           <img src={TwitterIcon} alt="twitter_logo" />

@@ -5,7 +5,7 @@ export const GalleryContainer = styled.div`
   width: 100%;
   height: fit-content;
   background-color: #F7F7F7;
-  box-shadow: 0px -10px 11px 2px rgba(3,22,49,0.71);
+  box-shadow: 0px 16px 14px -4px rgba(0,0,0,0.35);
 `
 
 export const GalleryItems = styled.div`

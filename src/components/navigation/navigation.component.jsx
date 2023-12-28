@@ -14,6 +14,7 @@ const Navigation = () => {
       <DesktopNav>
         <NavLink route={"/about-us"} page={"About Us"} />
         <NavLink route={"/our-products"} page={"Our Products"} />
+        <NavLink route={"/certificate"} page={"Certificates"} />
         <NavLink route={"/mission"} page={"Mission"} />
         <NavLink route={"/vision"} page={"Vision"} />
         <NavLink route={"/contact"} page={"Contact"} />
@@ -25,6 +26,7 @@ const Navigation = () => {
         <MobileNav open={isNavOpen}>
           <NavLink route={"/about-us"} page={"About Us"} />
           <NavLink route={"/our-products"} page={"Our Products"} />
+          <NavLink route={"/certificate"} page={"Certificates"} />
           <NavLink route={"/mission"} page={"Mission"} />
           <NavLink route={"/vision"} page={"Vision"} />
           <NavLink route={"/contact"} page={"Contact"} />

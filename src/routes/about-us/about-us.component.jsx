@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import { ColorsContext } from '../../context/colors.context';
 import PageContent from '../../components/page-content/page-content.component';
-import BannerImage from "./main_image.jpeg";
+import BannerImage from "./about_us_banner.jpeg";
 
 const AboutUs = () => {
   const { colors, setColors } = useContext(ColorsContext);

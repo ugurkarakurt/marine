@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import PageContent from '../../components/page-content/page-content.component';
 import { useContext } from 'react';
 import { ColorsContext } from '../../context/colors.context';
-import BannerImage from "./our_prodcut_image.jpeg";
+import BannerImage from "./our_product_banner.jpg";
 
 const OurProducts = () => {
 
@@ -10,6 +10,7 @@ const OurProducts = () => {
 
   useEffect(() => {
     setColors({ ...colors, backgroundColor: "linear-gradient(to right, #000000, #434343)", textColor: "rgba(255,255,255, .8)" })
+    console.log(colors);
   }, []);
 
   return (

@@ -9,6 +9,7 @@ import Vision from "./routes/vision/vision.component";
 import Header from "./components/header/header.component";
 import Footer from "./components/footer/footer.component";
 import Connections from "./components/connections/connections.component";
+import Certificate from "./routes/certificate/certificate.component";
 
 const App = () => {
 
@@ -34,6 +35,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/our-products" element={<OurProducts />} />
+        <Route path="/certificate" element={<Certificate />} />
         <Route path="/mission" element={<Mission />} />
         <Route path="/vision" element={<Vision />} />
         <Route path="/about-us" element={<AboutUs />} />
