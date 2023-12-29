@@ -33,6 +33,9 @@ export const Description = styled.div`
   line-height: 1.5;
   visibility: hidden;
   font-style: italic;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const isVisible = css`
