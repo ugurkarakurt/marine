@@ -55,15 +55,18 @@ const Footer = () => {
         <SocialMediaContainer>
           <h3>Follow Us</h3>
           <SocialMedia>
-            <span>
+            {/* <span>
               <img src={TwitterIcon} alt="twitter_logo" />
-            </span>
+            </span> */}
+
             <span>
-              <img src={LinkedinIcon} alt="linkedin_logo" />
+              <a target="_blank" href="https://www.linkedin.com/in/zafer-yilmaz-speedy-85a2784a/" rel="noreferrer">
+                <img src={LinkedinIcon} alt="linkedin_logo" />
+              </a>
             </span>
-            <span>
+            {/* <span>
               <img src={InstagramIcon} alt="instagram_logo" />
-            </span>
+            </span> */}
           </SocialMedia>
         </SocialMediaContainer>
       </FooterDescription>
