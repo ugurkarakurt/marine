@@ -21,6 +21,9 @@ export const ConnectionsContainer = styled.div`
   font-size: 14px;
   border-radius: 10px;
   ${({ $scrollPosition }) => $scrollPosition && hideSocialMedia};
+  a{
+    color: #fff;
+  }
   @media (max-width: 1200px) {
     width: 100%;
   }

@@ -9,9 +9,9 @@ import { ConnectionsContainer, Email, Number, SocialMedia } from './connections.
 const Connections = ({ scrollPosition }) => {
   return (
     <ConnectionsContainer $scrollPosition={scrollPosition}>
-      <a target='_blank' href="mailto: abc@example.com" rel="noreferrer">
+      <a target='_blank' href="mailto: sales@asapmar.com" rel="noreferrer">
         <Email className="mail">
-          mail@mail.com
+          sales@asapmar.com
         </Email>
       </a>
       <a target='_blank' href="https://wa.me/+9005356700485" rel="noreferrer">

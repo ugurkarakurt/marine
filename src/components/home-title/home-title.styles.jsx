@@ -11,13 +11,14 @@ const bounceAnimation = keyframes`
 
 export const HomeTitleContainer = styled.div`
   height: 500px;
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 50px;
   gap: 30px;
+  background-color: #242f37;
+  color: #fff;
   ${({ $isVisible }) => $isVisible && isVisible};
 `
 

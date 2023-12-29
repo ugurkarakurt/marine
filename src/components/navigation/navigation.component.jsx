@@ -13,10 +13,10 @@ const Navigation = () => {
     <NavbarContainer>
       <DesktopNav>
         <NavLink route={"/about-us"} page={"About Us"} />
-        <NavLink route={"/our-products"} page={"Our Products"} />
-        <NavLink route={"/certificate"} page={"Certificates"} />
         <NavLink route={"/mission"} page={"Mission"} />
         <NavLink route={"/vision"} page={"Vision"} />
+        <NavLink route={"/our-products"} page={"Our Products"} />
+        <NavLink route={"/certificate"} page={"Certificates"} />
         <NavLink route={"/contact"} page={"Contact"} />
       </DesktopNav>
       <MobileNavContainer>
@@ -25,10 +25,10 @@ const Navigation = () => {
         </MobileNavContainerTrigger>
         <MobileNav open={isNavOpen}>
           <NavLink route={"/about-us"} page={"About Us"} />
-          <NavLink route={"/our-products"} page={"Our Products"} />
-          <NavLink route={"/certificate"} page={"Certificates"} />
           <NavLink route={"/mission"} page={"Mission"} />
           <NavLink route={"/vision"} page={"Vision"} />
+          <NavLink route={"/our-products"} page={"Our Products"} />
+          <NavLink route={"/certificate"} page={"Certificates"} />
           <NavLink route={"/contact"} page={"Contact"} />
         </MobileNav>
       </MobileNavContainer>
